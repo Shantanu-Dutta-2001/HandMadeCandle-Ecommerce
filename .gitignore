@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+
+# Vite
+vite.config.ts.timestamp-*
+
+# .NET
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.doccache
+.vs/
+.vscode/
+appsettings.Development.json
+
+# SQL Server
+*.mdf
+*.ldf
+*.ndf
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+build_errors.txt
+build_errors_utf8.txt
+build_log.txt
+build_log_utf8.txt
+build_final.txt
+build_output.txt
+build_readable.txt
+design.png
