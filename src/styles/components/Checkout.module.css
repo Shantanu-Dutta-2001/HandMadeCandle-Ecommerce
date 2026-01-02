@@ -1,0 +1,243 @@
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.step {
+    font-weight: 500;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.step.active {
+    color: var(--color-accent);
+    /* Gold */
+    font-weight: 700;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: var(--border-subtle);
+}
+
+.stepContent {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cartReview {
+    background: var(--bg-primary);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+}
+
+.reviewItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.reviewItem:last-child {
+    border-bottom: none;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemName {
+    font-weight: 600;
+}
+
+.itemMeta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.reviewTotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ddd;
+}
+
+.addressList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.addressCard {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.addressCard:hover {
+    border-color: var(--color-accent);
+}
+
+.addressCard.selected {
+    border-color: var(--color-accent);
+    background-color: var(--bg-accent);
+    /* Light gold bg */
+    box-shadow: 0 0 0 2px var(--color-accent) inset;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    background-color: var(--border-subtle);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btnPrimary {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnPrimary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btnSecondary {
+    background-color: transparent;
+    border: 1px solid var(--border-subtle);
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.finalReviewGrid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+}
+
+.section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.5rem;
+}
+
+.bigTotal {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.linkBtn {
+    background: none;
+    border: none;
+    color: #d4af37;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.successScreen {
+    text-align: center;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.successIcon {
+    color: var(--color-accent);
+    background-color: var(--bg-accent);
+    padding: 2rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 0 20px rgba(212, 160, 23, 0.2);
+}
+
+.successTitle {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.successText {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.countdownText {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

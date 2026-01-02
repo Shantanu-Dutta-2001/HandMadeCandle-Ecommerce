@@ -1,0 +1,74 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.imageSection {
+    background: #f0f0f0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.infoSection {
+    padding: var(--spacing-lg) 0;
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: var(--spacing-md) 0;
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.actions {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.qtySelector {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+}
+
+.qtySelector button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.qtySelector span {
+    padding: 0 0.5rem;
+    font-weight: 600;
+}

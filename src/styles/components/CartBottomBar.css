@@ -1,0 +1,57 @@
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.bottomBarTotal {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomBarLabel {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.bottomBarValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.checkoutBtn {
+    background: #D4A017;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, background 0.2s;
+    box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3);
+}
+
+.checkoutBtn:hover {
+    background: #b8860b;
+    transform: translateY(-2px);
+}
+
+/* Adjust main container to prevents content from being hidden behind bottom bar */
+.cartContainer {
+    padding-bottom: 100px;
+}
