@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create Axios instance
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5165/api',
+    baseURL: import.meta.env.VITE_API_URL || 'http://candles.runasp.net/api',
     headers: {
         'Content-Type': 'application/json',
     },

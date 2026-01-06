@@ -3,6 +3,5 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/HandMadeCandle-Ecommerce/', // Ensures assets are loaded correctly on GitHub Pages
+  plugins: [react()]
 })

@@ -71,7 +71,7 @@ function App() {
           <Routes>
             {/* Public Routes with Navbar/Footer */}
             <Route element={<PublicLayout><Outlet /></PublicLayout>}>
-              <Route path="/HandMadeCandle-Ecommerce/" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/shop" element={<ProductList />} />
               <Route path="/shop/:id" element={<ProductDetail />} />
               <Route path="/cart" element={<Cart />} />
