@@ -1,4 +1,5 @@
 import api from './api';
+import { API_ENDPOINTS } from '../constants/apiEndpoints';
 
 export interface Review {
     id: number;
@@ -11,7 +12,7 @@ export interface Review {
 export const reviewService = {
     getReviews: async (): Promise<Review[]> => {
         try {
-            const response = await api.get('/reviews');
+            const response = await api.get(API_ENDPOINTS.REVIEWS.BASE);
             return response.data;
         } catch (error) {
             console.error("Error fetching reviews", error);
