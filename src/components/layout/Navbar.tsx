@@ -99,7 +99,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+            {/* <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} /> */}
+            {isAuthenticated && (
+                <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+            )}
 
             {/* Mobile Menu */}
             {isMenuOpen && (
